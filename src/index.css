@@ -1,0 +1,184 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(224, 71.4%, 4.1%);
+  --muted: hsl(220, 14.3%, 95.9%);
+  --muted-foreground: hsl(220, 8.9%, 46.1%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(224, 71.4%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(224, 71.4%, 4.1%);
+  --border: hsl(220, 13%, 91%);
+  --input: hsl(220, 13%, 91%);
+  --primary: hsl(221.2, 83.2%, 53.3%); /* blue primary */
+  --primary-foreground: hsl(210, 20%, 98%);
+  --secondary: hsl(220, 14.3%, 95.9%);
+  --secondary-foreground: hsl(220.9, 39.3%, 11%);
+  --accent: hsl(220, 14.3%, 95.9%);
+  --accent-foreground: hsl(220.9, 39.3%, 11%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(224, 71.4%, 4.1%);
+  --sidebar-bg: rgb(255,255,255);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(224, 71.4%, 4.1%);
+  --foreground: hsl(210, 20%, 98%);
+  --muted: hsl(215, 27.9%, 16.9%);
+  --muted-foreground: hsl(217.9, 10.6%, 64.9%);
+  --popover: hsl(224, 71.4%, 4.1%);
+  --popover-foreground: hsl(210, 20%, 98%);
+  --card: hsl(224, 71.4%, 4.1%);
+  --card-foreground: hsl(210, 20%, 98%);
+  --border: hsl(215, 27.9%, 16.9%);
+  --input: hsl(215, 27.9%, 16.9%);
+  --primary: hsl(210, 20%, 98%);
+  --primary-foreground: hsl(220.9, 39.3%, 11%);
+  --secondary: hsl(215, 27.9%, 16.9%);
+  --secondary-foreground: hsl(210, 20%, 98%);
+  --accent: hsl(215, 27.9%, 16.9%);
+  --accent-foreground: hsl(210, 20%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(210, 20%, 98%);
+  --ring: hsl(217.9, 10.6%, 64.9%);
+  --sidebar-bg: hsl(224, 71%, 8%);
+  --sidebar-foreground: hsl(210, 20%, 95%);
+  --sidebar-icon: hsl(210, 20%, 70%);
+  --sidebar-muted: hsl(210, 20%, 80%);
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    @apply font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    background-color: hsl(var(--background) / 0.8);
+    border-color: hsl(var(--border) / 0.5);
+    @apply backdrop-blur-sm border;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(to bottom right, hsl(var(--background)), hsl(var(--background)), hsl(var(--muted) / 0.2));
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.drag-over {
+  background-color: rgb(59 130 246 / 0.1);
+  border: 2px dashed rgb(59 130 246);
+  animation: pulse 1s infinite;
+}
+
+.calendar-cell {
+  min-height: 100px;
+  transition: all 0.2s ease;
+}
+
+.calendar-cell:hover {
+  background-color: hsl(var(--muted) / 0.3);
+}
+
+.sortable-ghost {
+  opacity: 0.4;
+  transform: rotate(5deg);
+  transition: all 0.2s ease;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* Loading animation */
+.loading-shimmer {
+  background: linear-gradient(90deg, 
+    hsl(var(--muted)) 25%, 
+    hsl(var(--muted-foreground) / 0.1) 50%, 
+    hsl(var(--muted)) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active,
+select:focus,
+select:active {
+  outline: none !important;
+  box-shadow: none !important;
+  /* border: none !important; */
+}
