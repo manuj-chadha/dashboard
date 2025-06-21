@@ -48,9 +48,9 @@ Quickly set up and run the **React Admin Dashboard** on your local machine.
 git clone https://github.com/manuj-chadha/dashboard.git
 
 2️⃣ Navigate into the project directory
-cd dashboard
+ - cd dashboard
 
 3️⃣ Install all dependencies
-npm install
+ - npm install
 
 
