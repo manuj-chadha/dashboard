@@ -54,7 +54,7 @@ export default function Sidebar({ isOpen, onClose }) {
               className="w-9 h-9 rounded-full flex items-center justify-center shadow-md"
               style={{ backgroundColor: 'var(--primary)' }}
             >
-              <img src="./public/celebal.jpeg" alt="no" className="rounded-full" />
+              <img src="./celebal.jpeg" alt="no" className="rounded-full" />
             </div>
             <div>
               <h1 className="font-extrabold text-xl" style={{ color: 'var(--foreground)' }}>

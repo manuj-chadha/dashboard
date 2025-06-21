@@ -77,7 +77,7 @@ export default function Header({ onMenuClick }) {
               type="button"
             >
               <img
-                src="./public/celebal.jpeg"
+                src="./celebal.jpeg"
                 alt="Profile avatar"
                 className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-2 border-blue-300 shadow-sm object-cover"
                 loading="lazy"
