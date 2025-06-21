@@ -28,13 +28,13 @@ A modern, responsive, and feature-rich admin dashboard built using **React.js**.
 
 ## 📸 Screenshots
 
-| Feature        | Light Mode                              | Dark Mode                               |
-|----------------|------------------------------------------|------------------------------------------|
-| **Dashboard**   | ![Dashboard](./public/dashboard.png)      | ![Dashboard Dark](./public/dashboard_dark.png)      |
-| **Table**       | ![Table](./public/table.png)              | ![Table Dark](./public/table_dark.png)              |
-| **Calendar**    | ![Calendar](./public/calendar.png)        | ![Calendar Dark](./public/calendar_dark.png)        |
-| **Kanban**      | ![Kanban](./public/kanban.png)            | ![Kanban Dark](./public/kanban_dark.png)            |
-| **Charts**      | ![Charts](./public/charts.png)            | ![Charts Dark](./public/charts_dark.png)            |
+| Light Mode                              |          Feature          | Dark Mode                               |
+|------------------------------------------|:-------------------------:|------------------------------------------|
+| ![Dashboard](./public/dashboard.png)      | **Dashboard**             | ![Dashboard Dark](./public/dashboard_dark.png)      |
+| ![Table](./public/table.png)              | **Table**                 | ![Table Dark](./public/table_dark.png)              |
+| ![Calendar](./public/calendar.png)        | **Calendar**              | ![Calendar Dark](./public/calendar_dark.png)        |
+| ![Kanban](./public/kanban.png)            | **Kanban**                | ![Kanban Dark](./public/kanban_dark.png)            |
+| ![Charts](./public/charts.png)            | **Charts**                | ![Charts Dark](./public/charts_dark.png)            |
 
 
 ---
