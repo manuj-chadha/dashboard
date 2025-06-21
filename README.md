@@ -32,13 +32,12 @@ A modern, responsive, and feature-rich admin dashboard built using **React.js**.
 |----------|----------|--------------|
 | ![Dashboard](./assets/dashboard.png) | ![Calendar](./assets/calendar.png) | ![Kanban](./assets/kanban.png) |
 
-> *Replace image paths with actual screenshots once added*
-
 ---
 
 ## 🚀 Getting Started
 
-git clone https://github.com/yourusername/dashboard.git
-cd dashboard
-npm install
-npm start
+- **1.**: git clone https://github.com/yourusername/dashboard.git
+- **2.**: cd dashboard
+- **3.**: npm install
+- **4.**: npm start
+
