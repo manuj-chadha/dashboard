@@ -30,7 +30,7 @@ A modern, responsive, and feature-rich admin dashboard built using **React.js**.
 
 | Dashboard | Calendar | Kanban Board |
 |----------|----------|--------------|
-| ![Dashboard](./assets/dashboard.png) | ![Calendar](./assets/calendar.png) | ![Kanban](./assets/kanban.png) |
+| ![Dashboard](./public/dashboard.png) | ![Calendar](./public/calendar.png) | ![Kanban](./public/kanban.png) |
 
 ---
 
