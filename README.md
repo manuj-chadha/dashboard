@@ -18,11 +18,11 @@ A modern, responsive, and feature-rich admin dashboard built using **React.js**.
 ## 🛠️ Tech Stack
 
 - **Frontend**: React.js, React Router DOM
-- **UI**: Tailwind CSS / CSS Modules (adjust based on what you used)
-- **State Management**: useState / Context API / Redux (if used)
-- **Icons**: React Icons / Heroicons
-- **Calendar**: FullCalendar or custom implementation
-- **Charts**: Recharts / Chart.js
+- **UI**: Tailwind CSS
+- **State Management**: useState
+- **Icons**:Lucide react library
+- **Calendar**: Custom implementation
+- **Charts**: Recharts 
 
 ---
 
@@ -39,13 +39,13 @@ A modern, responsive, and feature-rich admin dashboard built using **React.js**.
 Quickly set up and run the **React Admin Dashboard** on your local machine.
 
 
-# 1️⃣ Clone the repository
+1️⃣ Clone the repository
 git clone https://github.com/manuj-chadha/dashboard.git
 
-# 2️⃣ Navigate into the project directory
+2️⃣ Navigate into the project directory
 cd dashboard
 
-# 3️⃣ Install all dependencies
+3️⃣ Install all dependencies
 npm install
 
 
