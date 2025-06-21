@@ -34,10 +34,18 @@ A modern, responsive, and feature-rich admin dashboard built using **React.js**.
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started & 📦 Installation
 
-- **1.**: git clone https://github.com/yourusername/dashboard.git
-- **2.**: cd dashboard
-- **3.**: npm install
-- **4.**: npm start
+Quickly set up and run the **React Admin Dashboard** on your local machine.
+
+
+# 1️⃣ Clone the repository
+git clone https://github.com/manuj-chadha/dashboard.git
+
+# 2️⃣ Navigate into the project directory
+cd dashboard
+
+# 3️⃣ Install all dependencies
+npm install
+
 
