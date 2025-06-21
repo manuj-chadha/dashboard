@@ -28,9 +28,14 @@ A modern, responsive, and feature-rich admin dashboard built using **React.js**.
 
 ## 📸 Screenshots
 
-| Dashboard | Calendar | Kanban Board |
-|----------|----------|--------------|
-| ![Dashboard](./public/dashboard.png) | ![Calendar](./public/calendar.png) | ![Kanban](./public/kanban.png) |
+| Feature        | Light Mode                              | Dark Mode                               |
+|----------------|------------------------------------------|------------------------------------------|
+| **Dashboard**   | ![Dashboard](./public/dashboard.png)      | ![Dashboard Dark](./public/dashboard_dark.png)      |
+| **Table**       | ![Table](./public/table.png)              | ![Table Dark](./public/table_dark.png)              |
+| **Calendar**    | ![Calendar](./public/calendar.png)        | ![Calendar Dark](./public/calendar_dark.png)        |
+| **Kanban**      | ![Kanban](./public/kanban.png)            | ![Kanban Dark](./public/kanban_dark.png)            |
+| **Charts**      | ![Charts](./public/charts.png)            | ![Charts Dark](./public/charts_dark.png)            |
+
 
 ---
 
